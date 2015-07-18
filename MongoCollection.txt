@@ -1,0 +1,153 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>cd C:\Program Files\MongoDB 2.6 Standard\bin
+
+C:\Program Files\MongoDB 2.6 Standard\bin>mongo.exe Parking_System
+MongoDB shell version: 2.6.4
+connecting to: Parking_System
+> use parking_system
+switched to db parking_system
+> show collections;
+employee_info
+entry_info
+statistics
+system.indexes
+temp
+vehicle_count
+> db.employee_info.find().pretty();
+{
+        "_id" : "pratham84",
+        "name" : "umesh",
+        "lname" : "torawane",
+        "password" : "ust",
+        "mobileno" : "7276142814"
+}
+{
+        "_id" : "ayushee28",
+        "name" : "ayu",
+        "lname" : "shah",
+        "password" : "ayu29",
+        "mobileno" : "9623320084"
+}
+{
+        "_id" : "prasad90",
+        "name" : "prasad",
+        "lname" : "wagmare",
+        "password" : "wagmare95",
+        "mobileno" : "9520147890"
+}
+{
+        "_id" : "jai25",
+        "name" : "jay",
+        "lname" : "Kishan",
+        "password" : "123",
+        "mobileno" : "9881772269"
+}
+{
+        "_id" : "adc41",
+        "name" : "adc",
+        "lname" : "tgsxg",
+        "password" : "tgsxg65",
+        "mobileno" : "6541236541"
+}
+{
+        "_id" : "karan70",
+        "name" : "karan",
+        "lname" : "thanvi",
+        "password" : "thanvi94",
+        "mobileno" : "9404553270"
+}
+{
+        "_id" : "anubha90",
+        "name" : "anubha",
+        "lname" : "puulwale",
+        "password" : "puulwale45",
+        "mobileno" : "4561237890"
+}
+{
+        "_id" : "prathamesh48",
+        "name" : "prathamesh",
+        "lname" : "yeole",
+        "password" : "yeole95",
+        "mobileno" : "9595262648"
+}
+> db.entry_info.find().pretty();
+{
+        "_id" : 6564,
+        "name" : "ManishShah",
+        "mobileno" : "9822000887",
+        "vehno" : "MH-12-A-1234W2",
+        "intime" : NumberLong("1411126121685")
+}
+{
+        "_id" : 2606,
+        "name" : "karan",
+        "mobileno" : "9404553270",
+        "vehno" : "KT-12-A-9876W4",
+        "intime" : NumberLong("1411126211526")
+}
+{
+        "_id" : 9271,
+        "name" : "aa",
+        "mobileno" : "1234567894",
+        "vehno" : "MH-12-A-1234W2",
+        "intime" : NumberLong("1411134032834")
+}
+{
+        "_id" : 6831,
+        "name" : "sawana",
+        "mobileno" : "7507162666",
+        "vehno" : "MH-15-Z-3698W6",
+        "intime" : NumberLong("1411453698375")
+}
+{
+        "_id" : 5997,
+        "name" : "Thomson",
+        "mobileno" : "1212121212",
+        "vehno" : "MH-20-A-1W2",
+        "intime" : NumberLong("1411498948819")
+}
+{
+        "_id" : 3384,
+        "name" : "shalvi",
+        "mobileno" : "8545120304",
+        "vehno" : "PY-08-E-7894W4",
+        "intime" : NumberLong("1411546718573")
+}
+{
+        "_id" : 4156,
+        "name" : "ayushee",
+        "mobileno" : "5689741203",
+        "vehno" : "IGJ-00-B-2533W4",
+        "intime" : NumberLong("1411562232749")
+}
+{
+        "_id" : 2371,
+        "name" : "magghie",
+        "mobileno" : "7767905820",
+        "vehno" : "MH-36-X-0214W2",
+        "intime" : NumberLong("1411567136644")
+}
+> db.statistics.find().pretty();
+{
+        "_id" : "stats",
+        "2wheeler_count" : 0,
+        "4wheeler_count" : 1,
+        "other_count" : 0,
+        "2wheeler_income" : 0,
+        "4wheeler_income" : NumberLong(40),
+        "other_income" : 0,
+        "time" : "Wed Sep 24 19:34:15 IST 2014"
+}
+> db.vehicle_count.find().pretty();
+{
+        "_id" : ObjectId("541c14c9797e22c6c49c2a71"),
+        "wheeler_2" : 4,
+        "wheeler_4" : 3,
+        "other" : 1
+}
+> exit
+bye
+
+C:\Program Files\MongoDB 2.6 Standard\bin>
